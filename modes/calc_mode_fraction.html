@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Calculator | Mode: Fraction </title>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/calc_mode_fraction.css">
+	<!-- System -->
+
+	<script type="text/javascript" src="../js/mode-fraction/brojevi.js"></script>
+	<script type="text/javascript" src="../js/mode-fraction/sistem.js"></script>
+	<script type="text/javascript" src="../js/mode-fraction/methods.js"></script>
+	<script type="text/javascript" src="../js/mode-fraction/operators.js"></script>
+	<script src="../js/Expanding Math in JS/Fraction.js"></script>
+</head>
+<body>
+	<div class="calc-body">
+		<table>
+			<tr>
+				<td class="link-btn" title="Click to go to mode: Complex numbers" onclick="window.location.href = 'calc_mode_complex.html'">complex</td>
+				<td colspan="4" id="screen1"></td>
+				<td rowspan="2" id="operator"></td>
+			</tr>
+			<tr>
+				<td class="link-btn" title="Click to go to mode: Scientific" onclick="window.location.href = 'calc_mode_scientific.html'">scientific</td>
+				<td colspan="4" id="screen2"></td>
+			</tr>
+			<tr>
+				<td class="logical" title="Less than" onclick="Operator('<')">&#60;</td>
+				<td class="logical" title="Grather than" onclick="Operator('>')">&#62;</td>
+				<td class="logical" title="Less than or equal to" onclick="Operator('<=')">&#8804;</td>
+				<td class="logical" title="Grather than or equal to" onclick="Operator('>=')">&#8805;</td>
+				<td class="logical" title="Equal to" onclick="Operator('==')">&#61;</td>
+				<td class="logical" title="Not equal to" onclick="Operator('!=')">&#8800;</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">7</td>
+				<td class="number" onclick="Broj(this.innerHTML)">8</td>
+				<td class="number" onclick="Broj(this.innerHTML)">9</td>
+				<td class="fraction-methods" title="Get reciprocal value" onclick="REC()">REC</td>
+				<td class="fraction-methods" title="Negate fraction" onclick="NEG()">NEG</td>
+				<td id="bckspc" class="system-btn" title="Backspace in white screen" onclick="Bckspc()">&#8592;</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">4</td>
+				<td class="number" onclick="Broj(this.innerHTML)">5</td>
+				<td class="number" onclick="Broj(this.innerHTML)">6</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">^</td>
+				<td class="fraction-methods" title="Normalize frraction" onclick="NORM()">NORM</td>
+				<td class="system-btn" title="Clear white screen" onclick="Clear()">C</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">1</td>
+				<td class="number" onclick="Broj(this.innerHTML)">2</td>
+				<td class="number" onclick="Broj(this.innerHTML)">3</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">+</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">-</td>
+				<td class="system-btn" title="Clear white and gray screen" onclick="CE()">CE</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">0</td>
+				<td class="number" onclick="Tacka()">.</td>
+				<td class="number" onclick="Razlomacka()">/</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">*</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">/</td>
+				<td id="eval" class="system-btn" onclick="Evaluate()">=</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+	font-family: "Gill Sans", sans-serif;
+}
+.calc-body{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #777777;
+}
+.calc-body table{
+	height: 100%;
+	width: 100%;
+	border-spacing: 15px;
+	table-layout: fixed;
+}
+.calc-body table td{
+	overflow: hidden;
+	border-width: 3px;
+	border-style: solid;
+	box-sizing: border-box;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Osnovna dugmad su brojevi,osnovne aritmeticke operacije i sistemska dugmad.
+Zato ce se njihove klase nalaziti u ovom fajlu */
+.number{
+	height: 12%;
+	text-align: center;
+	background-color: #333333;
+	border-color: black;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	user-select: none;
+}
+.number:hover{
+	background-color: white;
+	border-color: #333333;
+	color: black;
+}
+.operations{
+	height: 12%;
+	text-align: center;
+	background-color: #95b3d7;
+	color: #244062;
+	font-size: 30px;
+	border-color: #244062;
+	cursor: pointer;
+	user-select: none;
+}
+.operations:hover{
+	background-color: #244062;
+	color: #95b3d7;
+	border-color: #95b3d7;
+}
+.system-btn{
+	height: 12%;
+	text-align: center;
+	background-color: #a93226;
+	color: #ffd700;
+	font-size: 30px;
+	border-color: #ffd700;
+	cursor: pointer;
+	user-select: none;
+}
+.system-btn:hover{
+	background-color: #ffd700;
+	color: #a93226;
+
+	border-color: #a93226;
+}
+.link-btn{
+	height: 12%;
+	text-align: center;
+	background-color: sandybrown;
+	color: saddlebrown;
+	font-size: 30px;
+	border-color: saddlebrown;
+	cursor: pointer;
+	user-select: none;
+}
+.link-btn:hover{
+	background-color: saddlebrown;
+	color: sandybrown;
+
+	border-color: sandybrown;
+}
+/* Complex Mode i Fraction mode imaju isti ekran. Zato sam css kod za ekran stavio ovde*/
+#operator{
+	height: 12%;
+	text-align: center;
+	background-color: white;
+	color: black;
+	font-size: 30px;
+	border-color: black;
+	user-select: none;
+}
+#screen1, #screen2{
+	height: 12%;
+	color: black;
+	font-size: 30px;
+	border-color: black;
+	text-align: left;
+}
+#screen1{
+	background-color: #bbb;
+}
+#screen2{
+	background-color: white;
+}
+.disabled{
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+.enabled{
+	cursor: pointer;
+}

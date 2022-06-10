@@ -1,0 +1,71 @@
+.calc-body table{
+	border-spacing: 5px;
+}
+#screen2{
+	text-align: right;
+}
+.math-methods{
+	text-align: center;
+	background-color: #b1a0c7;
+	color: #403151;
+	font-size: 30px;
+	border-color: #403151;
+	user-select: none;
+}
+.math-functions{
+	text-align: center;
+	background-color: #fabf8f;
+	color: #974706;
+	font-size: 30px;
+	border-color: #974706;
+	user-select: none;
+}
+.math-info{
+	text-align: center;
+	background-color: #ffeb9c;
+	color: #9c6500;
+	font-size: 30px;
+	border-color: #9c6500;
+	user-select: none;
+}
+.trigonometry{
+	text-align: center;
+	background-color: #da9694;
+	color: #632523;
+	font-size: 30px;
+	border-color: #632523;
+	user-select: none;
+}
+.inv-trigonometry{
+	text-align: center;
+	background-color: #c4d79b;
+	color: #4f6228;
+	font-size: 30px;
+	border-color: #4f6228;
+	user-select: none;
+}
+.math-functions:hover{
+	background-color: #974706;
+	border-color: #fabf8f;
+	color: #fabf8f;
+}
+.math-methods:hover{
+	background-color: #403151;
+	border-color: #b1a0c7;
+	color: #b1a0c7;
+}
+.math-info:hover{
+	background-color: #9c6500;
+	border-color: #ffeb9c;
+	color: #ffeb9c;
+}
+.trigonometry:hover{
+	background-color: #632523;
+	border-color: #da9694;
+	color: #da9694;
+}
+.inv-trigonometry:hover{
+	background-color: #4f6228;
+	border-color: #c4d79b;
+	color: #c4d79b;
+}

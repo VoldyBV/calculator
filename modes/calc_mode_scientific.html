@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Calculator | Mode: Scientific </title>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/calc_mode_scientific.css">
+	<!-- System -->
+	<script type="text/javascript" src="../js/mode-scientific/main.js"></script>
+	<script type="text/javascript" src="../js/mode-scientific/brojevi.js"></script>
+	<script type="text/javascript" src="../js/mode-scientific/operators.js"></script>
+	<script type="text/javascript" src="../js/mode-scientific/additional_buttons.js"></script>
+	<script type="text/javascript" src="../js/mode-scientific/trigonometry.js"></script>
+	<script type="text/javascript" src="../js/mode-scientific/sistem.js"></script>
+	
+	
+	<script src="../js/Expanding Math in JS/Angle.js"></script>
+	<script src="../js/Expanding Math in Js/extending_math.js"></script>
+</head>
+<body>
+	<div class="calc-body">
+		<table>
+			<tr>
+				<td class="link-btn" title="Click to go to mode: Complex numbers" onclick="window.location.href = 'calc_mode_complex.html'">complex</td>
+				<td id="screen1" colspan="7" title="Screen 1"></td>
+			</tr>
+			<tr>
+				<td class="link-btn" title="Click to go to mode: Fractions" onclick="window.location.href = 'calc_mode_fraction.html'">fraction</td>
+				<td id="screen2" colspan="7" title="Screen 2"></td>
+			</tr>
+			<tr>
+				<td class="math-methods enabled" onclick="Switch(0)" title="Switch math function">MF</td>
+				<td class="math-functions enabled" onclick="Switch(1)" title="Switch calculation function">EF</td>
+				<td class="math-info enabled" onclick="Switch(2)" title="Switch information function">IF</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">sin</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">cos</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">crd</td>
+				<td class="system-btn" title="Switch between radians and degrees" id="deg-rad" onclick="degrad(this)">deg</td>
+				<td id="bckspc" class="system-btn" title="Backspace in Screen2 (white screen)" onclick="Bckspc()">&#8592;</td>
+			</tr>
+			<tr>
+				<td class="math-methods enabled" id="sw0" onclick="Method()" title="Get number's factiorial">Fact</td>
+				<td class="math-functions enabled" id="sw1" onclick="Mathmatical()" title="Calculate the sum of given numbers">Sum</td>
+				<td class="math-info enabled" id="sw2" onclick="Info()" title="Check if number is prime">Prim</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">tan</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">ctg</td>
+				<td class="inv-trigonometry enabled" onclick="Invert(this)" title="Invert trigonometry functions">INV</td>
+				<td class="system-btn" title="Clear white screen" onclick="Clear()">C</td>
+				<td class="system-btn" title="Clear white screen and grey screen" onclick="CE()">CE</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">7</td>
+				<td class="number" onclick="Broj(this.innerHTML)">8</td>
+				<td class="number" onclick="Broj(this.innerHTML)">9</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">sec</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">csc</td>
+				<td class="operations enabled" onclick="Operators(this.innerHTML)">+</td>
+				<td class="operations enabled" onclick="Operators(this.innerHTML)">-</td>
+				<td class="operations enabled" onclick="Operators(this.innerHTML)">*</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">4</td>
+				<td class="number" onclick="Broj(this.innerHTML)">5</td>
+				<td class="number" onclick="Broj(this.innerHTML)">6</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">exs</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">exc</td>
+				<td class="operations enabled" title="Calculate the nth power of a number" onclick="Operators(this.innerHTML)">^</td>
+				<td class="operations enabled" title="Calculate the nth root of a number" onclick="Operators(this.innerHTML)">ˇ</td>
+				<td class="operations enabled" onclick="Operators(this.innerHTML)">/</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">1</td>
+				<td class="number" onclick="Broj(this.innerHTML)">2</td>
+				<td class="number" onclick="Broj(this.innerHTML)">3</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">ver</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">cov</td>
+				<td class="operations enabled" onclick="Zagrada(this.innerHTML)">(</td>
+				<td class="operations enabled" onclick="Zagrada(this.innerHTML)">)</td>
+				<td class="operations enabled" title="Get remainder of division" onclick="Operators(this.innerHTML)">%</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">0</td>
+				<td class="number enabled" onclick="BrPi()">&pi;</td>
+				<td class="number enabled" onclick="Broj(this.innerHTML)">e</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">vec</td>
+				<td class="trigonometry enabled" onclick="Trigonometrija(this)">cvc</td>
+				<td class="operations" onclick="Tacka(this.innerHTML)">.</td>
+				<td class="operations disabled" id="add" onclick="Zarez()" title="Add number to an array">,</td>
+				<td id="eval" class="system-btn" onclick="Eval()">=</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

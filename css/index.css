@@ -1,0 +1,32 @@
+.main{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #777777;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link-button{
+    font-size: 7vh;
+    height: 15%;
+    width: 60%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    text-decoration: none;
+    border: solid 3px;
+    background-color: sandybrown;
+    color: saddlebrown;
+    border-color: sandybsaddlebrownrown;
+}
+.link-button:hover {
+    background-color: saddlebrown;
+    color: sandybrown;
+    border-color: sandybrown;
+}

@@ -1,0 +1,31 @@
+.symbols{
+	height: 12%;
+	text-align: center;
+	background-color: #da9694;
+	color: #632523;
+	font-size: 30px;
+	border-color: #632523;
+	cursor: pointer;
+	user-select: none;
+}
+.symbols:hover{
+	background-color: #632523;
+	color: #da9694;
+
+	border-color: #da9694;
+}
+.complex-methods{
+	height: 12%;
+	text-align: center;
+	background-color: #b1a0c7;
+	color: #403151;
+	font-size: 30px;
+	border-color: #403151;
+	cursor: pointer;
+	user-select: none;
+}
+.complex-methods:hover{
+	background-color: #403151;
+	color: #b1a0c7;
+	border-color: #b1a0c7;
+}

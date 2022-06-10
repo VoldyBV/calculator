@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Calculator | Mode: Complex </title>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/calc_mode_complex.css">
+	<!-- System -->
+	<script type="text/javascript" src="../js/mode-complex/brojevi_simbol.js"></script>
+	<script type="text/javascript" src="../js/mode-complex/sistem.js"></script>
+	<script type="text/javascript" src="../js/mode-complex/methods.js"></script>
+	<script type="text/javascript" src="../js/mode-complex/operators.js"></script>
+	<script src="../js/Expanding Math in JS/Complex.js"></script>
+</head>
+<body>
+	<div class="calc-body">
+		<table>
+			<tr>
+				<td class="link-btn" title="Click to go to mode: Fractions" onclick="window.location.href = 'calc_mode_fraction.html'">fraction</td>
+				<td colspan="3" id="screen1"></td>
+				<td rowspan="2" id="operator"></td>
+			</tr>
+			<tr>
+				<td class="link-btn" title="Click to go to mode: Scientific" onclick="window.location.href = 'calc_mode_scientific.html'">scientific</td>
+				<td colspan="3" id="screen2"></td>
+			</tr>
+			<tr>
+				<td class="operations" onclick="Operator(this.innerHTML)">+</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">-</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">*</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">/</td>
+				<td class="operations" onclick="Operator(this.innerHTML)">^</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">7</td>
+				<td class="number" onclick="Broj(this.innerHTML)">8</td>
+				<td class="number" onclick="Broj(this.innerHTML)">9</td>
+				<td class="complex-methods" title="Conjugate complex number" onclick="CONJ()">*<u>Z</u></td>
+				<td id="bckspc" class="system-btn" title="Backspace in white screen" onclick="Bckspc()">&#8592;</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">4</td>
+				<td class="number" onclick="Broj(this.innerHTML)">5</td>
+				<td class="number" onclick="Broj(this.innerHTML)">6</td>
+				<td class="complex-methods" title="Get module of a complex number" onclick="Methods('module')">MOD</td>
+				<td class="system-btn" title="Clear white screen" onclick="Clear()">C</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">1</td>
+				<td class="number" onclick="Broj(this.innerHTML)">2</td>
+				<td class="number" onclick="Broj(this.innerHTML)">3</td>
+				<td class="complex-methods" title="Get argument of complex number" onclick="Methods('argument')">ARG</td>
+				<td class="system-btn" title="Clear white and gray screen" onclick="CE()">CE</td>
+			</tr>
+			<tr>
+				<td class="number" onclick="Broj(this.innerHTML)">0</td>
+				<td class="number" onclick="Tacka()">.</td>
+				<td class="symbols" onclick="Negate()" title="Negate real/imaginary part"><sup>+</sup>/<sub>-</sub></td>
+				<td class="symbols" id="switcher" title="Switch between real and imaginary part" onclick="Switch(this)">re</td>
+				<td id="eval" class="system-btn" onclick="Evaluate()">=</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
